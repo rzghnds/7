@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Коти</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<div class="header">
+<h1>Все про котів</h1>
+<nav>
+<ul>
+<li><button onclick="location.href='#'">Головна</button></li>
+<li><button onclick="changeBreeds()">Породи</button></li>
+<li><button onclick="location.href='#'">Догляд</button></li>
+<li><button onclick="location.href='#'">Цікаві факти</button></li>
+<li><button onclick="location.href='#'">Про нас</button></li>
+<li><button onclick="location.href='#'">Контакти</button></li>
+</ul>
+</nav>
+</div>
+
+<div class="container">
+<div class="photo">
+<img src="cat.jpg" alt="Фото кота">
+</div>
+
+<div class="data">
+<h2>Факти про котів</h2>
+<ul>
+<li>Коти можуть спати до 16 годин на добу.</li>
+<li>Муркотіння котів заспокоює людину.</li>
+<li>Коти можуть стрибати у 6 разів вище за свою висоту.</li>
+<li>Вони спілкуються з людьми більше, ніж між собою.</li>
+</ul>
+</div>
+
+<div class="breeds">
+<h2>Породи</h2>
+<p id="breeds">Натисни "Породи", щоб дізнатися більше!</p>
+</div>
+</div>
+
+<script>
+function changeBreeds() {
+document.getElementById("breeds").innerText = "Найпопулярніші породи котів: Мейн-кун, Британська короткошерста, Сфінкс.";
+}
+</script>
+
+</body>
+</html>
+
